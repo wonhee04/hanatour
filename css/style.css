@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+img{vertical-align: top;}
+button{background-color: transparent; border: 0;}
+.popup{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: #747b8e;
+    /* justify-content: space-between; 오른쪽으로 붙이기 앱 다운이랑 닫기 */
+    padding: 0 15px;
+}
+#wrapper{
+    min-width: 320px;
+}
+.popup .tit{
+    display: flex;
+    align-items: center;
+}
+.popup .tit .ico{
+    margin-right: 10px;
+}
+.popup .tit .ico img{
+    width: 28px;
+}
+.popup .tit .txt{
+    font-size: 12px;
+    color: white;
+}
+
+.popup .btns{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.popup .btns .app-down{}
+.popup .btns .app-down img{
+    height: 28px;
+}
+.popup .btns .pop-cls{
+    margin-left: 10px;
+}
+.popup .btns .pop-cls button img{
+    width: 15px;
+}
+.popup .btns .pop-cls button{
+    align-items: center;
+    background-color: transparent;
+    height: 100%;
+
+
+}
+header{
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+header .logo a{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+header .logo a img{
+    width: 100px;
+    height: 20px;
+}
+header .top{
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+header .btns{
+    display: flex;
+    align-items: center;
+}
+header .btns .box1 button{
+    height: 50px;
+    padding-left: 10px;
+}
+header .btns .box1 button img{
+    width: 35px;
+}
+header .btns .box2{
+    padding: 15px;
+}
+header .btns .box2 button{
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    transform: translateX(-50%);
+}
+header .btns .box2 button img{
+    width: 24px;
+}
+header .btns .box3 a{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+header .btns .box3 a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(-50%);
+}
+header .btns .box3 a img{
+    width: 24px;
+}
+header .bottom{
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+header .bottom nav{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+header .bottom nav .silder{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+header .bottom nav .silder .nav-item:last-child{
+    border-right: 1px solid #ccc;
+}
+header .bottom nav .silder .nav-item{
+    width: 100%;
+    min-width: max-content;
+}
+header .bottom nav .silder .nav-item.active{
+    color: #ff0066;
+    border-bottom: 2px solid #ff0066;
+    text-align: center;
+}
+header .bottom nav .silder .nav-item a{
+    padding: 0 8px;
+    box-sizing: border-box;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+header .bottom .btn-nav-more{}
+header .bottom .btn-nav-more button{
+    width: 44px;
+    height: 50px;
+}
+header .bottom .btn-nav-more button img{
+    width: 18px;
+}
+.banner{
+    position: relative;
+}
+.banner a img{
+    width: 100%;
+}
+.banner .page{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 7px 15px;
+    border-radius: 100px;
+    color: #ffffff;
+
+}
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav div{
+    border: 1px solid #747b8e;
+    padding: 10px 0;
+    width: 25%;
+    box-sizing: border-box;
+}
+.nav div a{
+}
+.nav div{
+    border-right: 0;
+    border-bottom: 0;
+}
+.nav div:nth-child(4n){
+    border-right: 1px solid #747b8e;
+}
+.nav div:nth-child(1n + 8){
+    border-bottom: 1px solid #747b8e;
+}
+.nav div a h2{
+    font-size: 14px;
+    text-align: center;
+}
+.nav div a img{
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+
+footer div a img{
+    width: 100%;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.wrap div{
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0 13px;
+}
+.wrap .box1{
+    border-right: none;
+}
+.wrap .box2{
+    border-right: none;
+}
+.box{
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.box .box1{
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+.box .box1 a{
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 2px solid black;
+}
+.box .box1 p:last-child{
+    border-right: 0;
+}
+.box .box2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
